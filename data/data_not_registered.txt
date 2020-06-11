@@ -1,0 +1,23 @@
+The following list contains areas for which we have the polygons. However, these areas aren't registered in the files containing all the countries and their capitals.
+
+Akrotiri and Dhekelia
+Ascension
+Ashmore and Cartier Islands
+Bajo Nuevo Bank (Petrel Is.)
+Baykonur Cosmodrome
+Clipperton Island
+Cyprus No Mans Area
+French Southern and Antarctic Lands
+Heard Island and McDonald Islands
+Indian Ocean Territories
+Macedonia
+Scarborough Reef
+Serranilla Bank
+Siachen Glacier
+South Georgia and the South Sandwich Islands
+Spratly Islands
+Tristan da Cunha
+United States Minor Outlying Islands
+US Naval Base Guantanamo Bay
+Wallis and Futuna
+Western Sahara
