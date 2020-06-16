@@ -1,6 +1,7 @@
 ,Country,Country info,Capital,Capital info,Capital hint,Flag,Flag similarity,Map,tags
 0,England,Constituent country of the United Kingdom.,London,,Not a sovereign country,"<img src=""ug-flag-england.svg"" />",,"<img src=""ug-map-england.png"" />",UG::Europe
 1,Scotland,Constituent country of the United Kingdom.,Edinburgh,,,"<img src=""ug-flag-scotland.svg"" />",,"<img src=""ug-map-scotland.png"" />",UG::Europe
+2,United Kingdom,,London,,Sovereign country,"<img src=""ug-flag-united_kingdom.svg"" />",,"<img src=""ug-map-united_kingdom.png"" />",UG::Europe UG::European_Union UG::Sovereign_State
 3,Northern Ireland,Constituent country of the United Kingdom.,Belfast,,,,,"<img src=""ug-map-northern_ireland.png"" />",UG::Europe
 4,France,,Paris,,,"<img src=""ug-flag-france.svg"" />",,"<img src=""ug-map-france.png"" />",UG::Europe UG::European_Union UG::Mediterranean UG::Sovereign_State
 5,Wales,Constituent country of the United Kingdom.,Cardiff,,,"<img src=""ug-flag-wales.svg"" />",,"<img src=""ug-map-wales.png"" />",UG::Europe
