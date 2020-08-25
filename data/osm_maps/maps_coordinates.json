@@ -1,0 +1,16 @@
+{
+  "christmas_island": {
+    "center": [-10.4924, 105.6298],
+    "top": -10.3416,
+    "bottom": -10.6431,
+    "left": 105.4444,
+    "right": 105.8152
+  },
+  "cocos_keeling_islands": {
+    "center": [-12.1348, 96.8726],
+    "top": -11.9849,
+    "bottom": -12.2847,
+    "left": 96.6872,
+    "right": 97.0580
+  }
+}
