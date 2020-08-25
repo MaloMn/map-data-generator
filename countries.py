@@ -32,6 +32,12 @@ def no_change(array):
 class Country:
 
     def __init__(self, folder, name):
+        """
+        Opens the json file of the country, and either collects the polygons online,
+        or loads them from a file if it exists.
+        :param folder: folder containing the country
+        :param name: Name of the country (no need to specify ".json"
+        """
         self.folder = folder
         self.name = name
 
@@ -107,7 +113,7 @@ class Country:
         # self.simplified = list(filter(lambda a: a is not None, self.simplified))
 
         # Saving the simplified shape
-        filename = self.name + "_" + str(thresh) + "_" + str(nb_points)
+        filename = self.name #+ "_" + str(thresh) + "_" + str(nb_points)
         with open(folder + filename + ".json", "w") as f:
             json.dump(self.simplified, f, indent=3)
         logger.info("Saved " + filename + ", {} polygons.".format(len(self.simplified)))

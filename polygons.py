@@ -51,8 +51,32 @@ def compute_triangles(array, triangles, indices):
 
 
 def correct_rotation_and_scale(array):
-    f = lambda x: [(x[0] + 180)*155/36, (-x[1] + 90)*155/36]
-    return np.apply_along_axis(f, 1, array)
+    # f = lambda x: [(x[0] + 180)*155/36, (-x[1] + 90)*155/36]
+    f = lambda x: [x[0] + 180, -x[1] + 90]
+    if len(np.array(array).shape) == 1:
+        return f(array)
+    else:
+        return np.apply_along_axis(f, 1, array)
+
+
+def resolve_geometry(original_poly):
+    poly = geometry.Polygon(original_poly)
+    if not poly.is_valid:
+        poly = poly.buffer(0)
+        try:
+            x, y = poly.exterior.coords.xy
+        except AttributeError:
+            # We have a MultiPolygon! We just select the biggest one.
+            poly = list(poly)
+            poly = sorted(poly, key=lambda a: a.area)
+            poly = poly[0]
+            x, y = poly.exterior.coords.xy
+
+        poly = list(zip(x, y))
+        poly = [list(a) for a in poly]
+        return np.array(poly)
+    else:
+        return np.array(original_poly)
 
 
 class Polygon:
@@ -75,18 +99,20 @@ class Polygon:
                 pass
 
         # Checking the geometry and attempting to resolve it with shapely
-        poly = geometry.Polygon(self.simplified)
-        if not poly.is_valid:
-            poly = poly.buffer(0)
-            try:
-                x, y = poly.exterior.coords.xy
-            except AttributeError:
-                # We have a MultiPolygon! We just select the biggest one.
-                poly = list(poly)
-                poly = sorted(poly, key=lambda a: a.area)
-                poly = poly[0]
-                x, y = poly.exterior.coords.xy
-
-            poly = list(zip(x, y))
-            poly = [list(a) for a in poly]
-            self.simplified = np.array(poly)
+        self.simplified = resolve_geometry(self.simplified)
+        # poly = geometry.Polygon(self.simplified)
+        # if not poly.is_valid:
+        #     poly = poly.buffer(0)
+        #     try:
+        #         x, y = poly.exterior.coords.xy
+        #     except AttributeError:
+        #         # We have a MultiPolygon! We just select the biggest one.
+        #         poly = list(poly)
+        #         poly = sorted(poly, key=lambda a: a.area)
+        #         poly = poly[0]
+        #         x, y = poly.exterior.coords.xy
+        #
+        #     poly = list(zip(x, y))
+        #     poly = [list(a) for a in poly]
+        #     self.simplified = np.array(poly)
+        print(len(self.simplified))
