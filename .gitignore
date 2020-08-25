@@ -4,3 +4,4 @@ __pycache__/
 notebooks_custom_errors/
 **/*.log
 **/*.ipynb
+venv/
