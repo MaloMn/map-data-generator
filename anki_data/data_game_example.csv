@@ -1,0 +1,8 @@
+,Country,Country info,Capital,Capital info,Capital hint,Flag,Flag similarity,Polygon,Pinpoint,tags,short
+0,Antarctica,,,,,,,x,,UG::Continents,antarctica
+1,Australia,,Canberra,,,x,"New Zealand (red stars, two fewer stars)",x,x,UG::Oceania UG::Sovereign_State,australia
+2,Bangladesh,It is in Asia,Dhaka,"Good name, innit?",,x,,x,x,UG::Asia UG::Sovereign_State,bangladesh
+3,Java,Island of Indonesia.,,,,,,,,UG::Asia,java
+4,Gabon,,Libreville,,,x,,x,x,UG::Africa UG::Sovereign_State,gabon
+5,Hungary,,Budapest,,,x,,x,x,UG::Europe UG::European_Union UG::Sovereign_State,hungary
+6,Cocos (Keeling) Islands,,West Island,,,,,x,,,cocos_keeling_islands
