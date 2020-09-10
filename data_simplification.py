@@ -30,7 +30,7 @@ for country_name in files:
     # if file_name == '':
     #     file_name = 'maps/' + country_name
 
-    c.simplify('data_collisionable/', thresh=0.1, nb_points=10)
+    c.simplify('polygon_display/', thresh=0.1, nb_points=10)
     # c.draw(file_name + '1')
-    c.simplify('data_displayable/', thresh=1.5)
+    c.simplify('polygon_collision/', thresh=1.5)
     # c.draw(file_name + '2')
