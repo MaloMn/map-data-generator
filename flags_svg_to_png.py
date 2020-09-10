@@ -3,17 +3,20 @@ import wand.color
 import wand.image
 import os
 
-folder_png = 'flags_png/'
+folder_png = 'flags/'
 width = '500'
 height = 'x500'
 heights = []
 
 # List svg files
-folder = 'flags/'
+folder = 'wiki_flags/'
 svg_files = os.listdir(folder)
 
 for file in svg_files:
     svg_file = open(folder + file, "rb")
+
+    future_name = file.replace('.svg', '.png')
+    future_name = future_name.replace('flag-', '')
 
     try:
         with wand.image.Image() as image:
@@ -25,9 +28,9 @@ for file in svg_files:
             heights.append(image.height)
             png_image = image.make_blob("png32")
 
-        with open(folder_png + file.replace('.svg', '') + '.png', "wb") as out:
+        with open(folder_png + future_name, "wb") as out:
             out.write(png_image)
-    except:
-        print('Problem with: ' + folder_png + file.replace('.svg', '') + '.png')
+    except :
+        print('Problem with: ' + future_name)
 
 print(heights)
