@@ -28,56 +28,56 @@ def no_change(array):
 
 class City:
 
-    def __init__(self, folder, name):
+    def __init__(self, folder, name, short):
         """
         Opens the json file of the country, and either collects the polygons online,
         or loads them from a file if it exists.
         :param folder: folder containing the country
-        :param name: Name of the country (no need to specify ".json"
+        :param name: Name of the country (no need to specify ".json")
         """
-        base_data = "data/0_pinpoints/"
+        base_data = "osm_pinpoints/"
         self.folder = folder
         self.name = name
+        self.short = short
 
         # Now we load the variable self.pinpoint
         try:
-            with open(base_data + self.name + ".json", "r") as f:
+            with open(base_data + self.short + ".json", "r") as f:
                 self.pinpoint = json.load(f)
-            print('Loaded {} from file.'.format(self.name))
+            print('Loaded {} from file.'.format(self.short))
+
         except FileNotFoundError:
             try:
                 self.pinpoint = self.get_pinpoint()
-                with open(folder + self.name + ".json", "w") as f:
+                with open(folder + self.short + ".json", "w") as f:
                     json.dump(self.pinpoint, f)
-                print('Successfully collected location of {} online: '.format(self.name))
-                # logger.info("{} city has been found online.".format(self.name))
+                print('Successfully collected location of {} online: '.format(self.short))
+                logger.info('Successfully collected location of {} online: '.format(self.short))
             except ValueError:
-                print('Something went wrong with {}.'.format(self.name))
-                logger.error("{} could not be found in OSM.".format(self.name))
+                print('Something went wrong with {}.'.format(self.short))
+                logger.error("{} could not be found in OSM.".format(self.short))
                 self.pinpoint = []
 
-        with open(folder + self.name + ".json", "w") as f:
+        # Saving the base_data in destination folder
+        with open(base_data + self.short + ".json", "w") as f:
+            json.dump(self.pinpoint, f)
+
+        # Saving the data in destination folder
+        with open(folder + self.short + ".json", "w") as f:
             self.pinpoint = correct_rotation_and_scale(self.pinpoint)
             json.dump(self.pinpoint, f)
-        # print(self.pinpoint)
-        # self.pinpoint = correct_rotation_and_scale(self.pinpoint)
-        # print(self.pinpoint)
 
     def get_pinpoint(self):
         data = json.loads(retrieve("https://nominatim.openstreetmap.org/search?q=" + self.name + "&format=geojson"))
         location = data["features"][0]["geometry"]["coordinates"]
-        print(location)
         return location
 
 
 if __name__ == "__main__":
     import pandas as pd
-    folder = "pinpoints/"
-    df = pd.read_csv("data/cleaned_data.csv")
+    df = pd.read_csv("anki_data/cleaned_data.csv", index_col=0)
     df = df[df['Capital'].notna()]
 
-    for i in range(df.shape[0]):
-        country = df.iloc[i, 1]
-        capital = df.iloc[i, 3]
-        print(country, capital)
-        print(City(folder, capital).pinpoint)
+    for capital, short in zip(df.Capital, df.short):
+        city = City("pinpoints/", capital, short)
+        print(capital, city.pinpoint)
