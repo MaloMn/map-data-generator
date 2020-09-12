@@ -10,7 +10,11 @@ print("Copying data: {} --> {}\n".format(current_folder, destination_folder))
 data = pd.read_csv("anki_data/cleaned_data.csv")
 
 # Filtering the data to keep wanted lines and header
+# CUSTOM CODE
+# short_list = ['united_states_of_america', 'france', 'china', 'russia', 'canada', 'brazil']
+# transfer_choice = data.apply(lambda x: x.short in short_list, axis=1)
 transfer_choice = data.apply(lambda x: 'Sovereign_State' in x.tags, axis=1)
+
 data = data[transfer_choice]
 data = data.drop(data.columns[0], axis=1)
 data = data.reset_index()
@@ -35,5 +39,3 @@ for f in ['pinpoints', 'polygons_collision', 'polygons_display', 'flags']:
             print("Could not find " + current_folder + name)
 
     print("Copied {} {}".format(len(shorts), f))
-
-# CAREFUL: Pinpoint for united_kingdom was not found in data.
