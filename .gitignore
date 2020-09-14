@@ -5,3 +5,4 @@ notebooks_custom_errors/
 **/*.log
 **/*.ipynb
 venv/
+**/*.zip
