@@ -1,9 +1,10 @@
 import json
+from polygons import Polygon
 
 with open('tm_to_anki.json', 'r', encoding='utf-8') as f:
     table = json.load(f)
 
-with open("TM_WORLD_BORDERS_SIMPL-0.3/TM_WORLD_BORDERS_SIMPL.json", 'r', encoding='utf-8') as f:
+with open("TM_WORLD_BORDERS-0.3/TM_WORLD_BORDERS.json", 'r', encoding='utf-8') as f:
     high = json.load(f)
 
 for p in high['features']:
@@ -17,5 +18,7 @@ for p in high['features']:
     else:
         polygons = p["geometry"]['coordinates']
 
-    with open('low/' + name + ".json", 'w') as f:
-        json.dump(polygons, f, indent=4)
+    polygons = [Polygon(p).array.tolist() for p in polygons]
+
+    with open('high/' + name + ".json", 'w') as f:
+        json.dump(polygons, f)
