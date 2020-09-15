@@ -1,0 +1,321 @@
+England
+Scotland
+United Kingdom
+Northern Ireland
+France
+Wales
+Georgia
+Germany
+Greece
+Greenland
+Hungary
+Albania
+Andorra
+Austria
+Azerbaijan
+Belarus
+Belgium
+Bosnia and Herzegovina
+Bulgaria
+Croatia
+Czech Republic
+Denmark
+Estonia
+Faroe Islands
+Finland
+Iceland
+Ireland
+Italy
+Latvia
+Liechtenstein
+Lithuania
+Luxembourg
+North Macedonia
+Malta
+Moldova
+Monaco
+Montenegro
+Netherlands
+Norway
+Poland
+Portugal
+Romania
+Russia
+San Marino
+Serbia
+Slovakia
+Slovenia
+Spain
+Sweden
+Switzerland
+Turkey
+Ukraine
+Vatican City
+Armenia
+Cyprus
+Kazakhstan
+Egypt
+Algeria
+Angola
+Benin
+Botswana
+Burkina Faso
+Cameroon
+Burundi
+Cape Verde
+São Tomé and Príncipe
+Central African Republic
+Chad
+Equatorial Guinea
+Kenya
+Comoros
+Ivory Coast
+Democratic Republic of the Congo
+Djibouti
+Guinea-Bissau
+Eritrea
+Ethiopia
+Gabon
+The Gambia
+Lesotho
+Liberia
+Madagascar
+Malawi
+Mali
+Mauritania
+Mauritius
+Morocco
+Mozambique
+Namibia
+Niger
+Nigeria
+Republic of the Congo
+Rwanda
+Senegal
+Seychelles
+Sierra Leone
+South Africa
+Sudan
+Eswatini
+Tanzania
+Togo
+Tunisia
+Uganda
+Sahrawi Arab Democratic Republic
+Zambia
+Zimbabwe
+Canary Islands
+Afghanistan
+Bahrain
+Bangladesh
+Bhutan
+Brunei
+China
+Cambodia
+Indonesia
+India
+Hong Kong
+Iran
+Israel
+Iraq
+South Korea
+North Korea
+Jordan
+Japan
+Lebanon
+Laos
+Kyrgyzstan
+Kuwait
+Myanmar
+Mongolia
+Maldives
+Malaysia
+Oman
+Nepal
+Palestine
+Pakistan
+Qatar
+Saudi Arabia
+Singapore
+Syria
+Taiwan
+Sri Lanka
+Tajikistan
+Thailand
+East Timor
+United Arab Emirates
+Turkmenistan
+Yemen
+Vietnam
+Uzbekistan
+Fiji
+Papua New Guinea
+Australia
+Solomon Islands
+Argentina
+Bolivia
+Brazil
+Chile
+Colombia
+Ecuador
+Guyana
+Paraguay
+Peru
+Suriname
+Uruguay
+Venezuela
+Cook Islands
+Federated States of Micronesia
+Guam
+Vanuatu
+Canada
+United States of America
+Mexico
+Puerto Rico
+Cuba
+Dominican Republic
+Haiti
+Jamaica
+Trinidad and Tobago
+Bermuda
+Guadeloupe
+The Bahamas
+Barbados
+Belize
+Costa Rica
+El Salvador
+Guatemala
+Honduras
+Nicaragua
+Panama
+Antigua and Barbuda
+Dominica
+Saint Vincent and the Grenadines
+Somalia
+Zanzibar
+Ghana
+Guinea
+New Zealand
+French Polynesia
+Philippines
+Galápagos Islands
+Kosovo
+Libya
+Palau
+Saint Lucia
+Bali
+Grenada
+Bonaire
+British Virgin Islands
+Turks and Caicos Islands
+Cayman Islands
+Anguilla
+Azores
+Ceuta
+Christmas Island
+Curaçao
+Easter Island
+French Guiana
+Gibraltar
+Guernsey
+Isle of Man
+Jersey
+Kiribati
+Macau
+Madeira
+Marshall Islands
+Melilla
+Montserrat
+Nauru
+New Caledonia
+Niue
+Norfolk Island
+Northern Cyprus
+Saba
+Saint Kitts and Nevis
+Samoa
+Somaliland
+South Sudan
+Tuvalu
+United States Virgin Islands
+Pitcairn Islands
+Åland Islands
+Cocos (Keeling) Islands
+Saint Helena
+Sint Eustatius
+South Ossetia
+Tokelau
+American Samoa
+Northern Mariana Islands
+Aruba
+Abkhazia
+Sint Maarten
+Republic of Artsakh
+Tonga
+Transnistria
+Sardinia
+Kaliningrad Oblast
+Martinique
+Java
+Corsica
+European Union
+Gulf of Mexico
+Philippine Sea
+Southern Ocean
+Gulf of Thailand
+Micronesia
+Pacific Ocean
+Atlantic Ocean
+Indian Ocean
+Arctic Ocean
+Hudson Bay
+Labrador Sea
+White Sea
+Denmark Strait
+Norwegian Sea
+Baltic Sea
+Celtic Sea
+English Channel
+Adriatic Sea
+Bay of Biscay
+Black Sea
+Aegean Sea
+Balkan Peninsula
+Caspian Sea
+Mediterranean Sea
+East Siberian Sea
+Bering Strait
+Arabian Sea
+Red Sea
+Dead Sea
+Bay of Bengal
+Sea of Japan
+Yellow Sea
+Coral Sea
+South China Sea
+Tasman Sea
+Gulf of Carpentaria
+Aral Sea
+Persian Gulf
+Caribbean Sea
+Gulf of California
+Polynesia
+Melanesia
+Scandinavia
+Sea of Galilee
+Sumatra
+Mount Athos
+Sicily
+Mayotte
+Réunion
+British Indian Ocean Territory
+Falkland Islands
+Europe
+North America
+South America
+Asia
+Africa
+Australia (Oceania)
+Antarctica
+Saint Martin
+Saint Barthélemy

@@ -1,0 +1,87 @@
+England
+Scotland
+Northern Ireland
+Wales
+Sahrawi Arab Democratic Republic
+Canary Islands
+Zanzibar
+Galápagos Islands
+Kosovo
+Bali
+Bonaire
+Azores
+Ceuta
+Curaçao
+Easter Island
+Madeira
+Melilla
+Northern Cyprus
+Saba
+Somaliland
+South Sudan
+Sint Eustatius
+South Ossetia
+Abkhazia
+Sint Maarten
+Republic of Artsakh
+Transnistria
+Sardinia
+Kaliningrad Oblast
+Java
+Corsica
+European Union
+Sumatra
+Mount Athos
+Sicily
+
+Gulf of Mexico
+Philippine Sea
+Southern Ocean
+Gulf of Thailand
+Micronesia
+Pacific Ocean
+Atlantic Ocean
+Indian Ocean
+Arctic Ocean
+Hudson Bay
+Labrador Sea
+White Sea
+Denmark Strait
+Norwegian Sea
+Baltic Sea
+Celtic Sea
+English Channel
+Adriatic Sea
+Bay of Biscay
+Black Sea
+Aegean Sea
+Balkan Peninsula
+Caspian Sea
+Mediterranean Sea
+East Siberian Sea
+Bering Strait
+Arabian Sea
+Red Sea
+Dead Sea
+Bay of Bengal
+Sea of Japan
+Yellow Sea
+Coral Sea
+South China Sea
+Tasman Sea
+Gulf of Carpentaria
+Aral Sea
+Persian Gulf
+Caribbean Sea
+Gulf of California
+Polynesia
+Melanesia
+Scandinavia
+Sea of Galilee
+
+Europe
+North America
+South America
+Asia
+Africa
+Australia (Oceania)
