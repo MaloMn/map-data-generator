@@ -1,9 +1,10 @@
 import pathlib
 import pandas as pd
 from shutil import copyfile
+from pathlib import Path
 
-current_folder = str(pathlib.Path().absolute()) + '\\'
-destination_folder = current_folder.replace("map_data_generator", "Map") + 'data\\'
+current_folder = Path.cwd()
+destination_folder = Path(str(current_folder).replace("map_data_generator", "map")) / 'data'
 print("Copying data: {} --> {}\n".format(current_folder, destination_folder))
 
 # Gathering data
@@ -21,7 +22,7 @@ data = data.reset_index()
 del data['index']
 
 # Save this array in the dest_folder
-data.to_csv(destination_folder + 'data.csv', sep=',')
+data.to_csv(destination_folder / 'data.csv', sep=',')
 print(data.head())
 
 # Getting the shorts of chosen areas
@@ -30,12 +31,12 @@ shorts = list(data.short)
 # Copy the polygons, pinpoints, flags
 for f in ['pinpoints', 'polygons_collision', 'polygons_display', 'flags']:
     for s in shorts:
-        name = f + '\\' + s
+        name = f + '/' + s
         name = name + '.json' if f != 'flags' else name + '.png'
 
         try:
-            copyfile(current_folder + name, destination_folder + name)
+            copyfile(current_folder / name, destination_folder / name)
         except FileNotFoundError:
-            print("Could not find " + current_folder + name)
+            print("Could not find ", current_folder / name)
 
     print("Copied {} {}".format(len(shorts), f))
